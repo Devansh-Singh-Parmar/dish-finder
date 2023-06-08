@@ -159,7 +159,7 @@ mealApp.searchMeal = function (e) {
                     //the innerHTML makes first letter of searched term capital
                     if (mealsArray) {
                          mealApp.clearThePage()
-                         resultHeadingEl.innerHTML = `<h2>${term.trim().charAt(0).toUpperCase() + term.trim().slice(1)} Meals : </h2>`
+                         resultHeadingEl.innerHTML = `<h2>${term.trim().charAt(0).toUpperCase() + term.trim().slice(1)} Dish : </h2>`
                          mealApp.displayMeals(mealsArray)
                     } else {
                          throw new Error('Please try again')
